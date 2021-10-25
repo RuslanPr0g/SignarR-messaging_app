@@ -1,17 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Chatting.WPF.ViewModels;
+using Microsoft.AspNetCore.SignalR.Client;
 using System.Windows;
 
 namespace Chatting.WPF
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            var connection = new HubConnectionBuilder()
+                .WithUrl("http://localhost:5000/chatting")
+                .Build();
+
+            ChattingViewModel chatViewModel = ChattingViewModel.CreatedConnectedViewModel(new Services.SignalRChattingService(connection));
+
+            MainWindow window = new()
+            {
+                DataContext = new MainViewModel(chatViewModel)
+            };
+
+            window.Show();
+        }
     }
 }
