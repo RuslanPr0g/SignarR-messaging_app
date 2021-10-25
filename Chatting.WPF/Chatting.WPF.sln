@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatting.WPF", "Chatting.WPF\Chatting.WPF.csproj", "{591255D7-A5FD-475C-A76A-A90BAB3C615A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatting.SignalR", "Chatting.SignalR\Chatting.SignalR.csproj", "{CA8D5029-AC4B-4817-AFF0-651758A9C527}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{591255D7-A5FD-475C-A76A-A90BAB3C615A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591255D7-A5FD-475C-A76A-A90BAB3C615A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591255D7-A5FD-475C-A76A-A90BAB3C615A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8D5029-AC4B-4817-AFF0-651758A9C527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8D5029-AC4B-4817-AFF0-651758A9C527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8D5029-AC4B-4817-AFF0-651758A9C527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8D5029-AC4B-4817-AFF0-651758A9C527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
